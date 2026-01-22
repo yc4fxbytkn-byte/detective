@@ -44,7 +44,6 @@ h2{
 .about{
     text-align:center;
     font-size:19px;
-    opacity:.95;
 }
 .services{
     display:grid;
@@ -56,10 +55,7 @@ h2{
     border:1px solid #2a2a2a;
     background:#111;
 }
-.card h3{
-    color:#bfa45a;
-    margin-bottom:15px;
-}
+.card h3{color:#bfa45a;margin-bottom:15px}
 .trust{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -79,16 +75,6 @@ h2{
     color:#bfa45a;
     text-decoration:none;
 }
-.btns a{
-    display:inline-block;
-    margin:15px;
-    padding:18px 45px;
-    font-size:16px;
-    letter-spacing:1px;
-    text-decoration:none;
-    color:#000;
-    background:#bfa45a;
-}
 footer{
     padding:30px;
     text-align:center;
@@ -101,6 +87,31 @@ footer{
     font-size:14px;
     opacity:.6;
 }
+
+/* 🔥 ПЛАВАЮЩИЕ КНОПКИ */
+.floating{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    z-index:999;
+}
+.floating a{
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#000;
+    font-size:26px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.5);
+}
+.whatsapp{background:#25D366}
+.telegram{background:#2AABEE;color:#fff}
 </style>
 </head>
 
@@ -109,42 +120,52 @@ footer{
 <header>
     <div>
         <h1>Частный <span>детектив</span></h1>
-        <p>Волгоград · Конфиденциальные расследования</p>
+        <p>Волгоград · Конфиденциально · Законно</p>
     </div>
 </header>
 
 <section>
     <h2>Профессиональный уровень</h2>
     <p class="about">
-        Частная детективная деятельность в Волгограде.  
-        <strong>Более 10 лет практического опыта</strong> и  
-        <strong>более 1000 довольных клиентов</strong>.<br><br>
-        Работаю лично, с <strong>ограниченным количеством клиентов</strong>.  
-        Деятельность осуществляется в соответствии с <strong>ФЗ РФ</strong>.  
-        Гарантирую <strong>полную анонимность и конфиденциальность</strong>.
+        Более 10 лет практического опыта.<br>
+        Более 1000 довольных клиентов.<br><br>
+        Работаю с ограниченным количеством клиентов.<br>
+        Деятельность осуществляется в соответствии с ФЗ РФ.<br>
+        Полная анонимность и конфиденциальность.
     </p>
 </section>
 
 <section>
     <h2>Основные направления</h2>
     <div class="services">
-        <div class="card">
-            <h3>Розыск лиц</h3>
-            <p>Поиск людей, установление местонахождения.</p>
-        </div>
-        <div class="card">
-            <h3>Проверка супруга / супруги</h3>
-            <p>Сбор достоверной информации, доказательная база.</p>
-        </div>
-        <div class="card">
-            <h3>Наблюдение</h3>
-            <p>Профессиональное наружное наблюдение.</p>
-        </div>
-        <div class="card">
-            <h3>Проверка лиц</h3>
-            <p>Биография, связи, репутация.</p>
-        </div>
-        <div class="card">
-            <h3>Бизнес-проверки</h3>
-            <p>Партнёры, контрагенты, сотрудники.</p>
-        </div>
+        <div class="card"><h3>Розыск лиц</h3><p>Поиск и установление местонахождения.</p></div>
+        <div class="card"><h3>Проверка супруга / супруги</h3><p>Сбор достоверной информации.</p></div>
+        <div class="card"><h3>Наблюдение</h3><p>Профессиональное наружное наблюдение.</p></div>
+        <div class="card"><h3>Проверка лиц</h3><p>Биография, связи, репутация.</p></div>
+        <div class="card"><h3>Бизнес-проверки</h3><p>Партнёры и сотрудники.</p></div>
+        <div class="card"><h3>Консультации</h3><p>Анонимно и по существу.</p></div>
+    </div>
+</section>
+
+<section class="contacts">
+    <h2>Связь</h2>
+    <div class="phone">
+        📞 <a href="tel:+79020909795">8 902 090-97-95</a>
+    </div>
+    <p class="note">
+        * Заведомо незаконные запросы не рассматриваются
+    </p>
+</section>
+
+<footer>
+    © 2026 Частный детектив · Волгоград
+</footer>
+
+<!-- 🔥 КНОПКИ -->
+<div class="floating">
+    <a class="whatsapp" href="https://wa.me/79044188645">💬</a>
+    <a class="telegram" href="https://t.me/+79965105724">✈️</a>
+</div>
+
+</body>
+</html>
